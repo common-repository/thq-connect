@@ -1,0 +1,324 @@
+**
+* TIDYCONNECT CALENDAR STYLES
+*/
+
+/* Add button */
+.thq-connect-calendar-add-dropbtn {
+    background-color: #26C281;
+    color: white;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 1.42857143
+    -webkit-font-smoothing: antialiased;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    cursor: pointer;
+	outline: none !important;
+	padding: 7px 14px;
+	margin-bottom: 10px;
+}
+
+.thq-connect-calendar-add-dropdown {
+    position: relative;
+    display: inline-block;
+	margin-right: 0;
+}
+
+.thq-connect-calendar-add-dropdown-content:before {
+	position: absolute;
+    top: -8px;
+    left: 9px;
+    right: auto;
+    display: inline-block !important;
+    border-right: 8px solid transparent;
+    border-bottom: 8px solid #eee;
+    border-left: 8px solid transparent;
+    content: '';
+}
+
+.thq-connect-calendar-add-dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    min-width: 160px;
+    box-shadow: 5px 5px rgba(102,102,102,0.1);
+	border: 1px solid #eee;
+    z-index: 1;
+	margin-top: 0px;
+}
+
+.thq-connect-calendar-add-dropdown-content a, .thq-connect-calendar-add-dropdown-content a:active, .thq-connect-calendar-add-dropdown-content a:visited  {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.thq-connect-calendar-add-dropdown-content a:hover {background-color: #f1f1f1}
+
+.thq-connect-calendar-add-dropdown:hover .thq-connect-calendar-add-dropdown-content {
+    display: block;
+}
+.thq-connect-calendar-add-dropdown:hover .thq-connect-calendar-add-dropbtn {
+    background-color: #20a46d;
+}
+
+/* Calendar-Wrap */
+div#thq-connect-calendar-wrap {
+	margin: 0px auto;
+	width: 100%;
+	font-size: 1em;
+	line-height: 1.33;
+	font-weight: 400;
+	color: #485a6a;
+	/*font-family:'Open Sans', Helvetica, Sans-serif;*/
+}
+
+/* Title showing Month & Year */
+div#thq-connect-calendar-wrap .calendar-title {
+	position: relative;
+	text-align: center;
+}
+
+div#thq-connect-calendar-wrap .calendar-title h2 {
+    margin-top: 3px;
+    font-size: 1.5em;
+}
+
+/* Left Nav showing link to Previous Month */
+#thq-connect-calendar-wrap .calendar-left-nav {
+	position: absolute;
+	bottom: 0;
+	left: 0;	
+}
+/* Right Nav showing link to Next Month */
+#thq-connect-calendar-wrap .calendar-right-nav {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+}
+
+/* Nav links */
+#thq-connect-calendar-wrap .calendar-nav a {
+	top: -65px;
+	color: #666;
+	text-transform: uppercase;
+	font-size: 12px;
+	padding-bottom: 35px;
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;
+	text-shadow: none;
+	border: 0;
+	height: 35px;
+	padding: 6px 8px 7px 8px;
+	margin-left: 2px;
+	border-top-style: none;
+	border-bottom-style: none;
+	border-right-style: solid;
+	border-left-style: solid;
+	background: transparent;
+	outline: none !important;
+	font-family: "Courier New", Courier, monospace;
+}
+
+/* Whole Table */
+table#thq-connect-calendar-table {
+    width: 100%;
+    table-layout: fixed;
+    border-collapse: collapse;
+    border-spacing: 0;
+    font-size: 1em;
+}
+
+#thq-connect-calendar-table thead th, #thq-connect-calendar-table tbody td, #thq-connect-calendar-table tbody tr {
+	border-color: #ddd;
+	text-align: center;
+}
+
+#thq-connect-calendar-table thead th, #thq-connect-calendar-table tbody td {
+    border-style: solid;
+    border-width: 1px;
+    padding: 0;
+    vertical-align: top;
+}
+
+/* Header Row showing day labels */
+#thq-connect-calendar-table thead th {
+    background-image: none;
+    filter: none;
+    background-color: #eee;
+    text-transform: uppercase;
+    font-weight: 300;
+}
+
+/* Week rows */
+#thq-connect-calendar-table tbody tr {
+    border-style: solid;
+    border-width: 0;
+    height: 65px;
+}
+
+
+/* Day cells */
+#thq-connect-calendar-table tbody td {
+	text-align: right;
+	padding-top: 2px;
+	padding-bottom: 2px;
+
+}
+/* Today */
+#thq-connect-calendar-table tbody td.active {
+	background-color: #fcf8e3;
+}
+/* Prev Month/Next Month cells */
+#thq-connect-calendar-table tbody td.inactive {
+	color: #ddd;
+}
+
+/* Event/Task/Meeting/Session items */
+a.calendar-event, a.calendar-task, a.calendar-meeting, a.calendar-session {
+	border: 0px;
+	color: #fff;
+	display: block;
+	width: 100%;
+	font-size: 13px;
+	text-align: left;
+	white-space: nowrap;
+	overflow: hidden;
+	position: relative;
+	z-index: 2;
+}
+/* Item Time */
+.calender-event-time {
+    float: left;
+    text-align: left;
+    color: #fff;
+    font-size: 13px;
+    font-weight: 300;
+    padding-right: 7px;
+}
+/* Item Title */
+.calender-event-title {
+    text-align: left;
+    float: left;
+    color: #fff;
+    font-size: 13px;
+    font-weight: 300;
+}
+/* Calendar Legend Box */
+#thq-connect-calendar-legend {
+	text-align: center;
+}
+/* Legend Box items */
+#thq-connect-calendar-legend span {
+	display: inline-block !important;
+	padding: 4px !important;
+	color: #fff !important;
+	cursor: pointer;
+}
+#thq-connect-calendar-legend span.inactive {
+	display: inline-block !important;
+	padding: 4px !important;
+	color: #333 !important;
+	cursor: pointer;
+	border: 1px solid #ccc;
+	background-color: #fff !important;
+}
+/* Legend Box first item */
+#thq-connect-calendar-legend span:first-child {
+	border-top-left-radius: 4px !important;
+	border-bottom-left-radius: 4px !important;
+}
+/* Legend Box last item */
+#thq-connect-calendar-legend span:last-child {
+	border-top-right-radius: 4px !important;
+	border-bottom-right-radius: 4px !important;
+}
+
+
+/* Widget */
+#thq-connect-calendar-widget {
+	max-width: 300px;
+	width: 100%;
+}
+#thq-connect-calendar-widget > div {
+	background-color: #ddd;
+	text-align: center;
+}
+#thq-connect-calendar-widget-back {
+	float: left;
+	text-decoration: none;
+	padding-left: 3px;
+}
+#thq-connect-calendar-widget-next {
+	float: right;
+	text-decoration: none;
+	padding-right: 3px;
+}
+#thq-connect-calendar-widget table {
+	width: 100%;
+	border: 1px solid #d1d1d1;
+	table-layout: fixed;
+    border-collapse: collapse;
+    border-spacing: 0;
+    font-size: 1em;
+}
+#thq-connect-calendar-widget thead th {
+	background-image: none;
+    filter: none;
+    background-color: #eee;
+    text-transform: uppercase;
+    font-weight: 300;
+	border-color: #ddd;
+}
+#thq-connect-calendar-widget thead th, #thq-connect-calendar-widget tbody td {
+    border-style: solid;
+    border-width: 1px;
+    padding: 0;
+    vertical-align: top;
+}
+#thq-connect-calendar-widget tfoot td {
+	color: #fff;
+	text-align: center;
+}
+#thq-connect-calendar-widget tfoot td div {
+	padding: 0px;
+	margin: 0px;
+	display: inline-block;
+	width: 20px; 
+	cursor: pointer;
+}
+#thq-connect-calendar-widget tfoot td div.inactive {
+	color: #333 !important;
+	border: 1px solid #ccc;
+	background-color: #fff !important;
+}
+
+#thq-connect-calendar-widget tbody td a {
+	text-decoration: none;
+}
+
+#thq-connect-calendar-widget tbody tr {
+	border-style: solid;
+    border-width: 0;
+}
+#thq-connect-calendar-widget tbody td {
+	border-color: #ddd;
+	padding-top: 2px;
+    padding-bottom: 2px;
+	width: 40px;
+	height: 40px;
+	text-align: center;
+	font-size: 0.75em;
+}
+#thq-connect-calendar-widget tbody td.today {
+    background-color: #fcf8e3;
+}
+#thq-connect-calendar-widget tbody td span {
+	display: block;
+	text-align: left;
+}
+ #thq-connect-calendar-widget tbody td.inactive {
+	color: #ddd;
+}
